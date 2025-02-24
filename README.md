@@ -48,6 +48,6 @@ streamlit run app.py
 
 🌍 How to Use the Deployed Version
 
-This app is hosted on Streamlit Cloud! Simply visit:👉 Live App Link Here (Replace this with your actual deployment link)
+This app is hosted on Streamlit Cloud! Simply visit:👉 [Roast My Resume](https://roast-my-resume.streamlit.app/)
 
 PS - This was my very first LangChain and streamlit project. Learnt a lot on the way and had fun! Hope you enjoy it 😉
