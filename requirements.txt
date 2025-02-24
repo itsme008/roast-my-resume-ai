@@ -1,4 +1,6 @@
 streamlit
 langchain
-openai
-pymupdf
+langchain_community
+langchain_groq
+python-dotenv
+PyMuPDF
