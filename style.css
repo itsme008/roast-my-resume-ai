@@ -1,0 +1,165 @@
+/* 🔥 Global Styles - Dark Theme */
+body, .stApp {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+}
+
+/* 🌍 Force Wide Mode in Streamlit */
+.main .block-container {
+    max-width: 100% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Move File Uploader Label Above */
+.stFileUploader label {
+    display: block; 
+    margin-bottom: 10px; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+/* 📂 File Uploader - Full Width and Centered */
+.stFileUploader {
+    max-width: 60%; 
+    width: 100%;
+    margin: auto; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+
+/* 🗨️ Chat Message Styling - Expand Width */
+.stChatMessage {
+    max-width: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
+/* AI Messages - Allow More Space */
+.stChatMessageAI {
+    background-color: #282828;
+    color: #FF9800;
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* User Messages - Allow More Space */
+.stChatMessageUser {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 75%;
+    width: 75%;
+}
+
+/* 🎯 Fix Padding Dynamically */
+@media screen and (max-width: 600px) {
+    /* 📌 Adjust title size on mobile */
+    .stApp h1 {
+        font-size: 2rem;
+        margin-top: -10px;
+    }
+
+    /* 📂 Fix File Uploader Width */
+    .stFileUploader {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    /* 💬 Chat Messages - Keep Them Boxed */
+    .stChatMessage {
+        max-width: 95%;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .stChatMessageAI, .stChatMessageUser {
+        width: 90%;
+        padding: 10px;
+    }
+
+    /* 📝 Fix Roast & Feedback Box for Mobile */
+    .roast-box {
+        max-width: 95%;
+        width: 95%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* 🎨 Reduce Button Size for Mobile */
+    .stButton > button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* 🎨 Style Buttons */
+.stButton > button {
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border: none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.stButton > button:hover {
+    background-color: #FF9800;
+    color: black;
+}
+
+/* 🔝 Title Styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+/* 🔥 Left-Align the Roast Header */
+.roast-header {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* 📝 Roast Text - Justified & Boxed */
+.roast-box {
+    text-align: justify;
+    background-color: #1E1E1E; 
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 100%; 
+    width: 95vw; 
+    margin: auto;
+    line-height: 1.6;
+    border: 1px solid #FF9800; 
+}
+
+.stApp h1 {
+    text-align: center; 
+    margin-top: -30px; 
+    font-size: 2.8rem;
+    font-weight: bold;
+}
